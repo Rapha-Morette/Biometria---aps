@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Live Python 129</title>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.3/brython.min.js">
+  </script>
+  <script type="text/python">
+    from browser import bind,document, html
+    print('Olá pessoas da live de python')
+
+    @bind('button', 'click')
+    def click_btn(event):
+      document <= html.P('Clicado')
+  </script>
+
 </head>
-<body>
+
+<body onload="brython()">
   olar Mundo
+  <button type="button" name="button"> Clica em mim!</button>
+
 </body>
+
 </html>
