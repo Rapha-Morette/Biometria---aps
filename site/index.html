@@ -5,25 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Python 129</title>
+  <title>FingerPrint</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Estilo.css">
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.3/brython.min.js">
   </script>
-  <script type="text/python">
-    from browser import bind,document, html
-    print('Olá pessoas da live de python')
-
-    @bind('button', 'click')
-    def click_btn(event):
-      document <= html.P('Clicado')
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.3/brython_stdlib.min.js">
   </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.3/brython_stdlib.js">
+  </script>
+  <script type="text/python" src="./fingerprint_rec(2).py"></script>
+  <script type="text/python">
+    from browser import opencv-python,bind,document,html
+    print('Olá pessoal do mal')
 
+  </script>
 </head>
 
 <body onload="brython()">
-  olar Mundo
-  <button type="button" name="button"> Clica em mim!</button>
+  <H1>Simulador de Biometria</H1>
+  <div class="Center-column">
+    <div class="container">
+
+      <div class="campos">
+        <span>Qual nivel deseja acessar?</span>
+        <select name="QualNivel">
+          <option value="valor1" selected>Nivel 1</option>
+          <option value="valor2">Nivel 2</option>
+          <option value="valor3">Nivel 3</option>
+        </select>
+      </div>
+      <div class="campos">
+        <span>Insira sua digital (path da imagem):</span>
+        <input type="file" name="Imagem" id="Imagem" accept="image/png, image/jpeg">
+      </div>
+    </div>
+  </div>
 
 </body>
 
